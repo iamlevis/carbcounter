@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chrislevis.carbcounter"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="19" />
+
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.chrislevis.carbcounter.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.chrislevis.carbcounter.ShowCharts"
+            android:label="@string/title_activity_handle_new_entry"
+            android:parentActivityName="com.chrislevis.carbcounter.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chrislevis.carbcounter.MainActivity" />
+        </activity>
+        
+        <activity android:name="com.google.ads.AdActivity"
+                      android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        
+        
+        <activity
+            android:name="com.chrislevis.carbcounter.DetailsView"
+            android:label="@string/title_activity_details_view"
+            android:parentActivityName="com.chrislevis.carbcounter.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chrislevis.carbcounter.MainActivity" />
+        </activity>
+        
+        <activity android:name="com.chrislevis.carbcounter.CcPreferences"
+                  android:label="Carb Counter"
+                  android:parentActivityName="com.chrislevis.carbcounter.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chrislevis.carbcounter.MainActivity" />
+        </activity>
+        
+        
+        <receiver android:name="com.chrislevis.carbcounter.CcWidgetProvider" android:label="CarbCounter">
+           <intent-filter>
+              <action  android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+              <action android:name="android.intent.action.BOOT_COMPLETED" />  
+           </intent-filter>
+           <meta-data
+              android:name="android.appwidget.provider"
+              android:resource="@xml/cc_widget"
+            />
+        </receiver>
+        <service android:name="com.chrislevis.carbcounter.WidgetUpdateService"></service>
+        
+    </application>
+</manifest>

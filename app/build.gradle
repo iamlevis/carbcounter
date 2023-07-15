@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+    }
+    compileSdkVersion 18
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.chrislevis.carbcounter"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 22
+        versionName '4.1'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile 'com.android.support:gridlayout-v7:18.0.0'
+    compile 'com.android.support:support-v4:18.0.0'
+    compile 'com.google.android.gms:play-services-ads:11.0.4'
+    /*compile files('libs/GoogleAdMobAdsSdk-6.4.1.jar')*/
+    /*compile files('libs/graphview-3.1.jar')*/
+    compile 'com.jjoe64:graphview:3.1.4'
+}

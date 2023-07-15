@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cc_widget"
+    android:background="#70000000">
+    <TextView
+        android:id="@+id/cc_widget_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="CarbCounter"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:padding="3dp" />
+
+    <TextView
+        android:id="@+id/cc_widget_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cc_widget_label"
+        android:padding="3dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+      />
+
+</RelativeLayout>

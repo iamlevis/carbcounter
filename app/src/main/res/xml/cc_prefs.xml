@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="general_settings"
+        android:title="General Settings">
+        <EditTextPreference
+            android:defaultValue="1"
+            android:inputType="number"
+            android:key="display_precision"
+            android:summary="Number of decimal places to display."
+            android:title="Decimal places" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="widget_settings"
+        android:title="Widget Settings">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_netcarbs"
+            android:summary="Show net carbs"
+            android:title="Show net carbs" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_calories"
+            android:summary="Show calories"
+            android:title="Show calories" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_carbs"
+            android:summary="Show total carbs"
+            android:title="Show total carbs" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_fiber"
+            android:summary="Show fiber"
+            android:title="Show fiber" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_sugalc"
+            android:summary="Show sugar alcohol"
+            android:title="Show sugar alcohol" />
+
+    </PreferenceCategory>
+</PreferenceScreen>
+
+
+
+
+

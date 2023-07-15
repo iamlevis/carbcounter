@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CarbCounter</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Guten tag, Weld!</string>
+    <string name="user_instructions">Enter total carbs, fiber, and sugar alcohols and I\'ll do the math.\nOr simply enter the net carbs.\nYou may also record the total calories.</string>
+    <string name="input_description">Remarks</string>
+    <string name="input_description_hint">(optional)</string>
+    <string name="input_total_carbs_hint">(grams)</string>
+    <string name="input_fiber_hint">(grams, optional)</string>
+    <string name="input_sugar_alcohols_hint">(grams, optional)</string>
+    <string name="input_total_calories_hint">(grams, optional)</string>
+    <string name="button_record">Record this</string>
+    <string name="button_show_charts">See charts</string>
+    <string name="title_activity_handle_new_entry">Historical charts</string>
+    <string name="total_carbs_label">Total or net carbs</string>
+    <string name="fiber_label">Fiber</string>
+    <string name="sugar_alcohol_label">Sugar alcohols</string>
+    <string name="total_calories_label">Calories</string>
+    <string name="description_label">Remarks</string>
+    <string name="delete_newest">Delete top</string>
+    <string name="title_activity_details_view">Details</string>
+
+</resources>
